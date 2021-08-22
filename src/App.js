@@ -15,11 +15,13 @@ import Header from "./Components/Header";
 
 function App() {
 
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState([])
 
   const storeName = (userName) =>{
     setUser(userName)
   }
+  // console.log(userName);
+  console.log(user)
   return (
     <div className="App">
       <Router>
