@@ -4,6 +4,9 @@ import Affirmation from "../Components/chatbot/Affirmation"
 import Activities from "../Components/Activities/Activities"
 import SingleActivity from "../Components/Activities/SingleActivity"
 import NegativeOptions from "../Components/Options/NegativeOptions/NegativeOptions"
+import ActivityOptions from "../Components/Options/ActivityOptions/ActivityOptions"
+import Celebration from "../Components/Celebration/Celebration"
+
 
 const config = {
     initialMessages: [createChatBotMessage(`How are you today?`)],
@@ -36,6 +39,16 @@ const config = {
             widgetName: "negativeOptions",
             widgetFunc: (props) => <NegativeOptions {...props} />,
             mapStateToProps: ["negativeOptions"]
+        },
+        {
+            widgetName: "activityOptions",
+            widgetFunc: (props) => <ActivityOptions {...props} />,
+            // mapStateToProps: ["negativeOptions"]
+        },
+        {
+            widgetName: "celebration",
+            widgetFunc: (props) => <Celebration {...props} />,
+            // mapStateToProps: ["negativeOptions"]
         }
     ]
 }
