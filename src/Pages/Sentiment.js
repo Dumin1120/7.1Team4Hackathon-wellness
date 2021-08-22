@@ -8,21 +8,19 @@ import ActionProvider from "../Components/chatbot/ActionProvider";
 import "./Sentiment.css";
 
 const Sentiment = ({ user }) => {
-  const newConfig = {
-    ...config,
-    initialMessages: [createChatBotMessage(`${user}, how are you today?`)],
-  };
-  return (
-    <div className="sentiment">
-      <div className="chatbot">
-        <Chatbot
-          config={newConfig}
-          messageParser={MessageParser}
-          actionProvider={ActionProvider}
-        />
-      </div>
-    </div>
-  );
+
+    const newConfig = { ...config, initialMessages: [createChatBotMessage(`Welcome to Unlocking Your Mind, make c`),] };
+    return (
+        <div className="sentiment">
+            <div className="chatbot">
+                <Chatbot
+                    config={newConfig}
+                    messageParser={MessageParser}
+                    actionProvider={ActionProvider}
+                />
+            </div>
+        </div>
+    );
 };
 
 export default Sentiment;
