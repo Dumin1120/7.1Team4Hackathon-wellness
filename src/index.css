@@ -5,9 +5,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background:linear-gradient(#3673d7, #98a3d0); */
+  /* background:linear-gradient(#3673d7,#b5c1db); */
+  /* background:linear-gradient(#3673d7, #91b9eb); */
+  /* background:linear-gradient(#3673d7,#fcfcfd); */
+  /* background:linear-gradient(#98a3d0, #3673d7); */
+  background:linear-gradient(#98a3d0, #b5c1db);
+  /* background:linear-gradient(#98a3d0, #fcfcfd); */
+  /* background:linear-gradient(#b5c1db, #91b9eb); */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.header{
+  text-align: center;
+}
+.Home{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.Home label{
+  font-size: 20px;
+}
+.Home input{
+  border-radius: 6px;
+  font-size: 20px;
+}
+.Home img{
+  margin-top: 8px;
+}
+.Home button {
+  margin-top: 13px;
+  margin-left: -220px;
+  font-size: 17px;
+}
+.Home h4{
+  font-family:  lobster, cursive;
+  font-size: 23px;
+}
+.sentiment{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.sentiment input{
+  font-size: 18px;
+  width: 250px; 
+  margin-bottom: 10px;
+}
+.sentiment2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.sentiment2 button{
+  width: 120px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.sentiment3{
+  margin-top: 20px;
+  color: white;
+  background-color:rgb(54, 54, 204);
+  font-size: 26px;
+  border-radius: 30px;
+  padding: 8px;
 }
