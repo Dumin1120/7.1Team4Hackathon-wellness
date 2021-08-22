@@ -18,7 +18,7 @@ export default function Home({ storeName }) {
     return (
         <div>
             <h1>HOME</h1>
-            <form action="" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name : </label>
                 <input type="text" id="name" placeholder="anonymous" onChange={handleNameChange} />
                 <button type="submit">Submit</button>
