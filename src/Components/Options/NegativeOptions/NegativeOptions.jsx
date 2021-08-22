@@ -1,12 +1,26 @@
 import React from 'react';
 import Chip from '@material-ui/core/Chip';
 import Avatar from '@material-ui/core/Avatar';
-import FontDownloadIcon from '@material-ui/icons/FontDownload';
+import AddIcon from '@material-ui/icons/Add';
+import SearchIcon from '@material-ui/icons/Search';
 
-const NegativeOptions = () => {
+import "./NegativeOptions.css";
+
+
+const NegativeOptions = (props) => {
+
+    const getMoreAdvice =() =>{
+        props.actionProvider.moreAdviceHandler();
+    }
+
+    const findActivity =() =>{
+        props.actionProvider.findActivityHandler();
+    }
+
     return (
-        <div>
-            <Chip avatar={<Avatar>M</Avatar>} label="Clickable"  />
+        <div className="negOps">
+            <Chip avatar={<AddIcon></AddIcon>} label="More Advice" onClick={()=>getMoreAdvice()} />
+            <Chip avatar={<SearchIcon></SearchIcon>} label="Find Activity" onClick={()=>findActivity()} />
         </div>
     );
 };
