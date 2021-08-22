@@ -1,0 +1,11 @@
+.msg-affirmation {
+  background-color: #2898ec;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: medium;
+  position: relative;
+  margin-left: auto;
+  text-align: left;
+}
