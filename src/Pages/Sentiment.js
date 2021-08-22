@@ -1,10 +1,10 @@
 import React from "react";
 
-const Sentiment = ({user}) => {
+const Sentiment = () => {
 
   return (
     <div className="sentiment">
-      <h3>How do you feel today {user}?</h3>
+      <h3>How do you feel today?</h3>
       <form>
         <input></input>
         <div className="sentiment2">
