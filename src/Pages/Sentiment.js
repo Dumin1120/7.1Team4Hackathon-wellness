@@ -8,6 +8,7 @@ import ActionProvider from "../Components/chatbot/ActionProvider";
 import "./Sentiment.css";
 
 const Sentiment = ({ user }) => {
+
     const newConfig = { ...config, initialMessages: [createChatBotMessage(`Welcome to Unlocking Your Mind, make c`),] };
     return (
         <div className="sentiment">
