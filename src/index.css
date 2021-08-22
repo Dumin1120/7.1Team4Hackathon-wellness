@@ -35,7 +35,8 @@ code {
   font-size: 20px;
 }
 .Home img{
-  margin-top: 8px;
+  margin-top: 30px;
+  height: 300px;
 }
 .Home button {
   margin-top: 13px;
@@ -43,6 +44,8 @@ code {
   font-size: 17px;
 }
 .Home p{
+  margin-top: 100px;
+  margin-bottom: 40px;
   font-family:  lobster, cursive;
   font-size: 23px;
 }
@@ -105,7 +108,7 @@ code {
     margin-top: -300px;
     margin-left: 50px;
    height: 500px;
-    width: 800px;
+    width: 600px;
   }
   .Home button {
     margin-top: 13px;

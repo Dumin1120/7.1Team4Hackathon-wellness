@@ -1,12 +1,26 @@
 .react-chatbot-kit-chat-container {
   position: relative;
-  width: 375px;
+  height: 750px;
+  width: 370px;
 }
-
+.react-chatbot-kit-chat-header{
+  display: flex;
+  justify-content: center;
+}
 .react-chatbot-kit-chat-bot-message {
   margin-left: 0%;
 }
-
 .chatbot {
   margin: auto;
+}
+.react-chatbot-kit-chat-message-container{
+  height: 670px;
+  background-color: rgba(255, 255, 255, 0.94);
+}
+.react-chatbot-kit-chat-input {
+  height: 50px;
+  font-family:  lobster;
+}
+.react-chatbot-kit-chat-btn-send{
+  height: 76px;
 }
