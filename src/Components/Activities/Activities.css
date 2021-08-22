@@ -1,0 +1,21 @@
+.activitiesList {
+  background-color: #2898ec;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 25%;
+  padding-top: 10px;
+}
+
+.activitiesList > div {
+  padding: 8px;
+  margin: 4px;
+  width: 105px;
+}
+
+.activity {
+  background-color: #2898ec;
+  padding-bottom: 5px;
+  border-radius: 5%;
+}

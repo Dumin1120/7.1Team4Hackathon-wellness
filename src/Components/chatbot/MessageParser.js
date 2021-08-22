@@ -10,12 +10,24 @@ class MessageParser {
 
     parse(message) {
         const { messages } = this.state;
-        if (messages.length === 1) {
-            const result = sentiment.analyze(message);
+        console.log(messages);
+        const result = sentiment.analyze(message);
+
+        if (messages.length === 2) {
+            return this.actionProvider.nameHandler(message);
+        }
+        if (messages.length === 5) {
+
             return this.actionProvider.sentimentHandler(result.score);
         }
-        // if (messages.length === 3)
-        return this.actionProvider.adviceHandler();
+
+
+        const activitiesList = ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"];
+        if (activitiesList.includes(message.toLowerCase())) {
+            return this.actionProvider.singleActivityHandler();
+        }
+
+        return result.score > 0 ? this.actionProvider.sentimentHandler(result.score) : this.actionProvider.adviceHandler();
     }
 }
 
