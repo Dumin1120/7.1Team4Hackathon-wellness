@@ -1,0 +1,12 @@
+.react-chatbot-kit-chat-container {
+  position: relative;
+  width: 375px;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  margin-left: 0%;
+}
+
+.chatbot {
+  margin: auto;
+}

@@ -5,11 +5,13 @@ import config from "../configs/chatbotConfig";
 import MessageParser from "../Components/chatbot/MessageParser";
 import ActionProvider from "../Components/chatbot/ActionProvider";
 
+import "./Sentiment.css";
+
 const Sentiment = ({ user }) => {
     const newConfig = { ...config, initialMessages: [createChatBotMessage(`${user}, how are you today?`)] };
     return (
         <div className="sentiment">
-            <div>
+            <div className="chatbot">
                 <Chatbot
                     config={newConfig}
                     messageParser={MessageParser}
